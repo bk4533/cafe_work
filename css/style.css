@@ -5,3 +5,136 @@ body{
     font-size: 16px;
     color: #333;
 }
+.container{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.list-style-none{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.align-items-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.red{
+    color: red;
+}
+.bold{
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
+/*-------------------------header-----------------------------------*/
+header{
+    padding: 10px;
+}
+.mainlogo img{
+  height: 40px;
+  
+}
+.loging{
+    border: 1px solid #ccc;
+    font-size: 13px;
+    padding: 2px 8px;
+}
+.top-nav>li:not(:first-child){
+    margin-left: 25px;
+}
+.top-nav>li a,
+.top-nav>li span.material-symbols-sharp{
+    color: #999;
+}
+.top-nav>li a:hover,
+.top-nav>li span.material-symbols-sharp{
+    color: #2b2b2b;
+}
+.top-nav>li:last-child{
+    position: relative;
+}
+.list-view{
+    background: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    z-index: 3;
+    right: 0px; 
+    top:45px;
+    display: none;
+    
+}
+.list-view::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url(../images/p.png) no-repeat;
+    right: 5px;
+    top:-22px;
+    z-index: 4;
+}
+.icon-list{
+    padding: 15px 20px;
+    font-size: 13px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 10px;
+}
+.top-nav>li .icon-list a{
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+}
+.icon-list a:hover{
+    text-decoration: underline;
+}
+.icon-list li{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 15px;
+}
+.icon-list img{
+    height: 35px;
+    }
+.map-list{
+    margin: 0px 20px 10px;
+}
+.map-list>li{
+    width: 25%;
+    border-right: 1px solid #dedede;
+    padding-left: 5px;
+}
+.map-list>li:last-child{
+    border: none;
+}
+.map-list>li>a{
+    display: block;
+    font-size: 13px;
+    color: #2b2b2b;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a.all{
+    display: block;
+    padding: 15px;
+    background: #efefef;
+}
+
+/*-------------------------section1-----------------------------------*/
