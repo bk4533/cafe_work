@@ -28,5 +28,12 @@ $(function(){
                    .removeClass('fa-angle-down')
                    .addClass('fa-angle-up');
         $("#selectbox").val(txt);
+        $('#searchtext').focus();
+
+    });
+
+    $('.hero li').mouseenter(function(){
+       $('.hero li').removeClass('active');
+       $(this).addClass('active');
     })
 });//jquery
