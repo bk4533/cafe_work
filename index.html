@@ -14,9 +14,10 @@
 </head>
 <body>
     <header>
-     <div class="container d-flex justify-content-between">
+     <!-- header top -->
+     <div class="container d-flex justify-content-between ">
         <a href="#" class="mainlogo"><img src="images/logo.png" alt="#"></a>
-        <ul class="top-nav d-flex list-style-nine">
+        <ul class="top-nav d-flex list-style-none">
             <li><a href="#" class="loging">로그인</a></li>
             <li><a href="mailto:"><span class="material-symbols-outlined">
                 mail</span></li></a>
@@ -42,8 +43,7 @@
                          </a>
                         </li>
                     </ul>
-                    <ul class="map-list icon-list list-style-none d-flex justify-content-between">
-                        <!--네비게이션 아이콘당 한 줄식-->
+                    <ul class="map-list d-flex list-style-none">
                         <li>
                             <a href="#">블로그</a>
                             <a href="#">블로그</a>
@@ -72,10 +72,38 @@
                     <a href="#" class="all text-center">전체보기</a>
                 </div>
             </li>
-            
+        </ul> 
+     </div>  
+     <!--/header top-->
+     <div class="main-header container d-flex align-items-center">
+        <a href="#" class="logo d-block">coffee</a>
+        <ul class="nav list-style-none d-flex">
+          
+            <li><a href="#">홈</a></li>
+            <li><a href="#">팬카페</a></li>
+            <li><a href="#">카페랭킹</a></li>
+            <li><a href="#">내카페</a></li>
+            <li class="last"><a href="#">온라인 교실</a></li>      
         </ul>
-       </div>
-    </header>
-    
+        <form id="searchform">
+            <div class="selectbox">
+             <a href="#" class="search-select">카페검색</a>
+             <i class="fa-solid fa-angle-down"></i>
+             <div class="search-sbox">
+                <a href="#">카페검색</a>
+                <a href="#">통합검색</a>
+                <a href="#">카페이름</a>
+                <a href="#">카페글</a>
+             </div>
+            </div>
+            <input type="hidden" name="selectbox" id="selectbox">
+            <input type="text" name="searchtext" id="searchtext" placeholder="검색어를 입력하세요."/>
+            <button type="button" class="btn-none "><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+     </div>
+     <!-- header main-->
+
+     <!-- /header main-->
+    </header>  
 </body>
 </html>
